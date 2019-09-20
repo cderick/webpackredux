@@ -1,0 +1,72 @@
+.containerBackground {
+  background-color: white;
+  padding-bottom: 3%;
+
+  h2 {
+    color: black;
+  }
+
+  h3 {
+    color: black;
+  }
+
+  .myCard {
+    text-align: left;
+    border: 1px solid #000;
+    height: auto;
+    cursor: pointer;
+
+    .imgResize {
+      width: 100%;
+      height: auto;
+      opacity: 0.8;
+    }
+
+    .fakeButton {
+      border: solid 1px #0b434e;
+      color: white;
+      background-color: #0b434e;
+      border-radius: 9px;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      width: 200px;
+      float: right;
+
+      &:hover {
+        border: solid 1px #00191e;
+        background-color: #00191e;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .myCard {
+    h2 {
+      font-size: 1.9rem !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .containerBackground {
+    h3 {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  .myCard {
+    margin-bottom: 20px;
+    text-align: center !important;
+
+    h2 {
+      font-size: 1.4rem !important;
+    }
+
+    .fakeButton {
+      float: none !important;
+      margin: 0 auto !important;
+    }
+  }
+}

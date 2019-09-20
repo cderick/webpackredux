@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      //"@atoms/*": ["src/components/atoms/*"],
+      //"@molecules/*": ["src/components/molecules/*"],
+      //"@organisms/*": ["src/components/organisms/*"],
+      //"@templates/*": ["src/components/templates/*"],
+      //"@decorators/*": ["src/decorators/*"],
+      //"@helpers/*": ["src/helpers/*"],
+      //"@icons/*": ["src/assets/icons/*"],
+      //"@logos/*": ["src/assets/logos/*"],
+      "@images/*": ["static/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "__mocks__",
+    "data",
+    "dist"
+  ]
+}

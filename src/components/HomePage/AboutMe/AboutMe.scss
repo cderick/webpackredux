@@ -1,0 +1,69 @@
+.containerBackground {
+  background-image: url('../../../../static/hero.png');
+  background-position: 73% -1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+
+  h2 {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  img {
+    display: none;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #fff;
+    padding: 0 0 30px;
+    width: 85%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .containerBackground {
+    height: 50vh;
+    background-size: cover;
+    background-position: 62%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerBackground {
+    background-image: none;
+    background: linear-gradient(#023136 85%, white 15%) !important;
+    color: white;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    p {
+      text-align: left !important;
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      height: auto;
+      border: solid 3px #0a444e;
+    }
+
+    h2 {
+      font-size: 1.9rem !important;
+      padding-top: 20px;
+    }
+  }
+
+  .clearDisplay {
+    display: block !important;
+  }
+}

@@ -1,0 +1,95 @@
+.containerBackground {
+  background-color: #00191e;
+  height: 40vh;
+
+  h3 {
+    color: white;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #fff;
+    padding: 0 0 30px;
+    width: 80%;
+    margin: 0;
+  }
+
+  .contactmeLinks {
+    color: white;
+    text-decoration: none !important;
+
+    &:hover {
+      color: #bfbfbf;
+      text-decoration: none !important;
+    }
+  }
+
+  .iconHover {
+    &:hover {
+      color: #bfbfbf !important;
+    }
+  }
+
+  .rightHr {
+    float: right;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 823px)
+  and (orientation: landscape) {
+  .containerBackground {
+    height: 70vh !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerBackground {
+    height: 27vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .containerBackground {
+    height: auto !important;
+  }
+
+  .clearDisplay {
+    display: block !important;
+  }
+
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+  }
+
+  hr {
+    margin: 0 auto !important;
+    width: 70% !important;
+    padding-bottom: 10px !important;
+  }
+
+  h3 {
+    font-size: 1rem !important;
+  }
+
+  .rightHr {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 70% !important;
+  }
+
+  .paddingNoneSm {
+    padding: 0 0 20px !important;
+  }
+}

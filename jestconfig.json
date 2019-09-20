@@ -1,0 +1,36 @@
+{
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/jest.filemock.js",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/mocks/*.js",
+      "!**/mocks/**/*.js",
+      "!src/index.jsx"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "verbose": true,
+    "coverageReporters": [
+      "lcov",
+      "json",
+      "cobertura"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "testResultsProcessor": "<rootDir>/config/jest/jestTrxProcessor"
+}
